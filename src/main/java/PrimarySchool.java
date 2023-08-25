@@ -1,8 +1,25 @@
 public class PrimarySchool {
 
-    private int a;
-    private int b;
-    private int c;
-    private int h;
+    private String[] formulaList = new String[0];
 
+
+     private double result;
+
+    public void triangleArea(double a, double h){
+        printFormulas("Triangle Area","1/2 a * h");
+        this.result = 1/2 * a * h;
+       // printResult("1/2" + " " + h );
+    }
+
+
+
+
+
+    public static void printFormulas(String formulasName, String formula){
+        System.out.println("Formulas - " + formulasName + '\n' + formula);
+    }
+
+    public static void printResult(String formulaData, double result){
+        System.out.println(formulaData + result);
+    }
 }
