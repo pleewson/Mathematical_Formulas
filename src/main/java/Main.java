@@ -1,10 +1,26 @@
 import java.util.Scanner;
 
 public class Main {
-
-    Scanner scan = new Scanner(System.in);
     public static void main(String [] args){
-        System.out.println("Hello! Choose kind of Mathematical Formulas you looking for:");
+        Scanner scan = new Scanner(System.in);
+
+
+        Methods.start();
+
+      //  String userType = scan.nextLine();
+
+        while(scan.hasNextLine()) {
+            if (scan.nextLine().equals("1") || scan.nextLine().equals("Primary School")) {
+                System.out.println("Primary School - Formulas list");
+                break;
+            } else {
+                System.out.println("Incorrect enter, try again.");
+            }
+        }
+
+
+
+
 
         //primary school
         //high school

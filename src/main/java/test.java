@@ -2,8 +2,10 @@ public class test {
     public static void main(String[] args) {
 
 
-        PrimarySchool primarySchool = new PrimarySchool();
+        String[] kaczka = new String[0];
 
-        primarySchool.triangleArea();
+    }
+    public void incarr(String[] Array, String text){
+        Array
     }
 }
