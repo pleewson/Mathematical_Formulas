@@ -3,7 +3,9 @@ public class test {
 
 
         String[] kaczka = new String[0];
-        kaczka[0] = "lal";
 
+    }
+    public void incarr(String[] Array, String text){
+        Array
     }
 }
