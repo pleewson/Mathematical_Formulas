@@ -2,8 +2,8 @@ public class test {
     public static void main(String[] args) {
 
 
-        PrimarySchool primarySchool = new PrimarySchool();
+        String[] kaczka = new String[0];
+        kaczka[0] = "lal";
 
-        primarySchool.triangleArea();
     }
 }

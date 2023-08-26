@@ -1,6 +1,12 @@
+import java.util.Arrays;
+
 public class PrimarySchool {
 
+
     private String[] formulaList = new String[0];
+
+
+
 
 
      private double result;
@@ -21,5 +27,10 @@ public class PrimarySchool {
 
     public static void printResult(String formulaData, double result){
         System.out.println(formulaData + result);
+    }
+
+    protected void increaseArray(String formulaName){
+        this.formulaList = Arrays.copyOf(formulaList, formulaList.length+1);
+        this.formulaList[formulaList.length-1] = formulaName;
     }
 }
