@@ -1,16 +1,7 @@
 public class PrimarySchool {
 
-   /* private int a;
-    private int b;
-    private int c;
-    private int h;
+    private String[] formulaList = new String[0];
 
-    private double a;
-    private double b;
-    private double c;
-    private double h;
-
-    */
 
      private double result;
 
