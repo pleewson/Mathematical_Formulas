@@ -1,6 +1,8 @@
 import java.util.Arrays;
 
 public class PrimarySchool {
+
+
     public static void main(String[] args) {
         String[] formulaList = new String[10];
         formulaList[0] = "Basic Triangle Area Formula";
