@@ -1,3 +1,4 @@
+
 public class Methods {
 
     public static void start(){
@@ -16,6 +17,12 @@ public class Methods {
     }
 
 
+
+    public static void printFormulaArray(String[] formulaArray){
+        for(String formulas : formulaArray){
+            System.out.println(formulas);
+        }
+    }
 
 
 
