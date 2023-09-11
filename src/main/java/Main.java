@@ -1,22 +1,29 @@
 import java.util.Scanner;
 
 public class Main {
+
+    public static String[] formulaListPRIMARYSCHOOL = new String[3];
+
     public static void main(String [] args){
         Scanner scan = new Scanner(System.in);
 
 
         Methods.start();
 
-      //  String userType = scan.nextLine();
+        String select = scan.nextLine();
 
-        while(scan.hasNextLine()) {
-            if (scan.nextLine().equals("1") || scan.nextLine().equals("Primary School")) {
-                System.out.println("Primary School - Formulas list");
-                break;
+            if (select.equals("1") || select.equalsIgnoreCase("Primary School")) {
+                System.out.println("Primary School - Formulas list:");
+
+                Methods.printFormulaArray(formulaListPRIMARYSCHOOL);
+                //why i cant initialize array?
+
             } else {
                 System.out.println("Incorrect enter, try again.");
+
+                //go back to beginning
             }
-        }
+
 
 
 

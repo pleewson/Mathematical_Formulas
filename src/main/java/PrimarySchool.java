@@ -2,12 +2,11 @@ import java.util.Arrays;
 
 public class PrimarySchool {
 
-
     public static void main(String[] args) {
-        String[] formulaList = new String[10];
-        formulaList[0] = "Basic Triangle Area Formula";
-        formulaList[1] = "Square Field";
-        formulaList[2] = "Diagonal of a square"; //przekatna kwadratu
+
+        Main.formulaListPRIMARYSCHOOL[0] = "Basic Triangle Area Formula";
+        Main.formulaListPRIMARYSCHOOL[1] = "Square Field";
+        Main.formulaListPRIMARYSCHOOL[2] = "Diagonal of a square"; //przekatna kwadratu
 
     }
 
