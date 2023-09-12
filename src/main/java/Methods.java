@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class Methods {
 
@@ -23,6 +24,14 @@ public class Methods {
             System.out.println(formulas);
         }
     }
+
+
+   /* public static void icreaseArray(String[] arrayToIncrease, String text){
+        arrayToIncrease = Arrays.copyOf(arrayToIncrease,arrayToIncrease.length+1);
+        arrayToIncrease[arrayToIncrease.length-1] = text;
+
+    }
+    */
 
 
 

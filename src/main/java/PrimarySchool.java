@@ -1,14 +1,15 @@
 import java.util.Arrays;
 
 public class PrimarySchool {
+    public static String[] formulaListPRIMARYSCHOOL = new String[3];
 
-    public static void main(String[] args) {
 
-        Main.formulaListPRIMARYSCHOOL[0] = "Basic Triangle Area Formula";
-        Main.formulaListPRIMARYSCHOOL[1] = "Square Field";
-        Main.formulaListPRIMARYSCHOOL[2] = "Diagonal of a square"; //przekatna kwadratu
-
+    static {
+        formulaListPRIMARYSCHOOL[0] = "Basic Triangle Area Formula";
+        formulaListPRIMARYSCHOOL[1] = "Square Field";
+        formulaListPRIMARYSCHOOL[2] = "Diagonal of a square"; //przekatna kwadratu
     }
+
 
 
     private double result;
@@ -28,6 +29,8 @@ public class PrimarySchool {
         System.out.println(formulaData + result);
     }
 
+
+    //not using. Method that increase Array by 1
    /* public void increaseArray(String[] Array, String formulaName){
         Array = Arrays.copyOf(Array, Array.length+1);
         Array[Array.length-1] = formulaName;
