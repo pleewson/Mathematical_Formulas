@@ -2,8 +2,6 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static String[] formulaListPRIMARYSCHOOL = new String[3];
-
     public static void main(String [] args){
         Scanner scan = new Scanner(System.in);
 
@@ -13,10 +11,10 @@ public class Main {
         String select = scan.nextLine();
 
             if (select.equals("1") || select.equalsIgnoreCase("Primary School")) {
-                System.out.println("Primary School - Formulas list:");
+                System.out.println("Primary School - Formulas list:" +'\n');
 
-                Methods.printFormulaArray(formulaListPRIMARYSCHOOL);
-                //why i cant initialize array?
+                Methods.printFormulaArray(PrimarySchool.formulaListPRIMARYSCHOOL);
+
 
             } else {
                 System.out.println("Incorrect enter, try again.");
