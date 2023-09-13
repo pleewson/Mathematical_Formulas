@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class PrimarySchool {
     public static String[] formulaListPRIMARYSCHOOL = new String[3];
 
@@ -28,6 +26,7 @@ public class PrimarySchool {
     public static void printResult(String formulaData, double result){
         System.out.println(formulaData + result);
     }
+
 
 
     //not using. Method that increase Array by 1

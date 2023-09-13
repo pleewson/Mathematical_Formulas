@@ -1,26 +1,12 @@
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String [] args){
-        Scanner scan = new Scanner(System.in);
+       // Scanner scan = new Scanner(System.in);
 
 
         Methods.start();
 
-        String select = scan.nextLine();
-
-            if (select.equals("1") || select.equalsIgnoreCase("Primary School")) {
-                System.out.println("Primary School - Formulas list:" +'\n');
-
-                Methods.printFormulaArray(PrimarySchool.formulaListPRIMARYSCHOOL);
-
-
-            } else {
-                System.out.println("Incorrect enter, try again.");
-
-                //go back to beginning
-            }
+        Methods.ifPrimarySchool();
 
 
 
