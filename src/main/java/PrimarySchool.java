@@ -7,9 +7,6 @@ public class PrimarySchool {
         formulaListPRIMARYSCHOOL[1] = "Square Field";
         formulaListPRIMARYSCHOOL[2] = "Diagonal of a square"; //przekatna kwadratu
     }
-
-
-
     private double result;
 
     public void triangleArea(double a, double h){
@@ -23,10 +20,10 @@ public class PrimarySchool {
         System.out.println("Formulas - " + formulasName + '\n' + formula);
     }
 
+
     public static void printResult(String formulaData, double result){
         System.out.println(formulaData + result);
     }
-
 
 
     //not using. Method that increase Array by 1
