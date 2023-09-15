@@ -6,7 +6,7 @@ public class Main {
 
         Methods.start();
 
-        Methods.ifPrimarySchool();
+        Methods.chooseLevelSchool();
 
 
 
