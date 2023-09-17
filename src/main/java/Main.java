@@ -28,5 +28,5 @@ public class Main {
         //if you type "RESET" it will move you to 1st stage.
 
 
-    } //hbtm!:)
+    } //website
 }
