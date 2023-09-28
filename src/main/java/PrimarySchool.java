@@ -1,11 +1,16 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class PrimarySchool {
-    public static String[] formulaListPRIMARYSCHOOL = new String[3];
+    public static Map<String, Integer> formulaListPRIMARYSCHOOL = new HashMap<>();
 
 
     static {
-        formulaListPRIMARYSCHOOL[0] = "Basic Triangle Area Formula";
-        formulaListPRIMARYSCHOOL[1] = "Square Field";
-        formulaListPRIMARYSCHOOL[2] = "Diagonal of a square"; //przekatna kwadratu
+        formulaListPRIMARYSCHOOL.put("1. Basic Triangle Area Formula", "<formula>");
+        formulaListPRIMARYSCHOOL.put("Square Field", "<formula>");
+        formulaListPRIMARYSCHOOL.put("Diagonal of a square", "<formula>");
     }
     private double result;
 

@@ -1,4 +1,6 @@
 import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Scanner;
 
 public class Methods {
@@ -18,9 +20,11 @@ public class Methods {
     }
 
 
-    public static void printFormulaArray(String[] formulaArray){
-        for(int i = 0; i < formulaArray.length; i++){
-            System.out.println(i+1 + ". " + formulaArray[i]);
+    public static void printFormulaList(List<String> formulaList){
+        Iterator <String> iterator = PrimarySchool.formulaListPRIMARYSCHOOL.iterator();
+        while (iterator.hasNext()){
+            String result = iterator.next();
+            System.out.println(result);
         }
     }
 
@@ -43,7 +47,7 @@ public class Methods {
             if (select.equals("1") || select.equalsIgnoreCase("Primary School")) {
                 System.out.println("Primary School - Formulas list:" + '\n');
 
-                Methods.printFormulaArray(PrimarySchool.formulaListPRIMARYSCHOOL);
+                printFormulaList(PrimarySchool.formulaListPRIMARYSCHOOL);
 
                 select = scan.next();
                 Methods.chooseFormula(select, PrimarySchool.formulaListPRIMARYSCHOOL);
