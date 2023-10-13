@@ -1,43 +1,17 @@
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Methods {
 
-    public static void start(){
-        System.out.println("Hello! Choose kind of Mathematical Formulas you looking for:" +'\n');
-        printListOfSchools();
-        System.out.println("Choose name or hit number to select level of school:");
+    public static void start() {
+        System.out.println("Hello! Choose kind of Mathematical Formulas you looking for:" + '\n');
 
-    }
-
-
-    public static void printListOfSchools(){
         System.out.println("1. Primary School");
         System.out.println("2. High School");
         System.out.println("3. University" + '\n');
+
+        System.out.println("Choose name or hit number to select level of school:");
+
     }
-
-
-    public static void printFormulaList(List<String> formulaList){
-        Iterator <String> iterator = PrimarySchool.formulaListPRIMARYSCHOOL.iterator();
-        while (iterator.hasNext()){
-            String result = iterator.next();
-            System.out.println(result);
-        }
-    }
-
-
-    public static void chooseFormula(String select, String[] formulaArray){
-        for(int i = 0; i < formulaArray.length; i++){
-            if(Integer.parseInt(select)-1 == i) {
-                System.out.println(formulaArray[i]);
-                break;
-            }
-        }
-    }
-
 
     public static void chooseLevelSchool() {
         Scanner scan = new Scanner(System.in);
@@ -49,8 +23,8 @@ public class Methods {
 
                 printFormulaList(PrimarySchool.formulaListPRIMARYSCHOOL);
 
-                select = scan.next();
-                Methods.chooseFormula(select, PrimarySchool.formulaListPRIMARYSCHOOL);
+                //  select = scan.next();
+                // Methods.chooseFormula(select, PrimarySchool.formulaListPRIMARYSCHOOL);
                 break;
 
             } else if (select.equals("2") || select.equalsIgnoreCase("High School")) {
@@ -61,17 +35,35 @@ public class Methods {
                 System.out.println("University - Formulas list" + '\n');
                 break;
 
-            }else{
+            } else {
                 System.out.println("Incorrect enter, try again.");
             }
         }
     }
 
 
-    /* public static void icreaseArray(String[] arrayToIncrease, String text){
-        arrayToIncrease = Arrays.copyOf(arrayToIncrease,arrayToIncrease.length+1);
-        arrayToIncrease[arrayToIncrease.length-1] = text;
+    public static void printFormulaList(ArrayList<String> formulaList) {
+        Scanner scan = new Scanner(System.in);
 
+        Iterator<String> iterator = PrimarySchool.formulaListPRIMARYSCHOOL.iterator();
+        while (iterator.hasNext()) {
+            String print = iterator.next();
+            System.out.println(print);
+        }
+
+        System.out.println("\n Select formula:");
+
+        while (true) {
+            int numberOfFormnula = scan.nextInt();
+
+            if (numberOfFormnula > formulaList.size() || numberOfFormnula < 1) {
+                System.out.println("Incorrect number, try again.");
+            } else {
+                System.out.println(formulaList.get(numberOfFormnula - 1));
+                break; //continue
+            }
+
+
+        }
     }
-    */
 }
