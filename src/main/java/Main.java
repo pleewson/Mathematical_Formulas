@@ -5,7 +5,6 @@ public class Main {
 
 
         Methods.start();
-
         Methods.chooseLevelSchool();
 
 

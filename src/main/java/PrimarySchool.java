@@ -1,17 +1,16 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class PrimarySchool {
-    public static Map<String, Integer> formulaListPRIMARYSCHOOL = new HashMap<>();
+    public static ArrayList <String> formulaListPRIMARYSCHOOL = new ArrayList<>();
 
 
     static {
-        formulaListPRIMARYSCHOOL.put("1. Basic Triangle Area Formula", "<formula>");
-        formulaListPRIMARYSCHOOL.put("Square Field", "<formula>");
-        formulaListPRIMARYSCHOOL.put("Diagonal of a square", "<formula>");
+        formulaListPRIMARYSCHOOL.add("1. Basic Triangle Area Formula");
+        formulaListPRIMARYSCHOOL.add("2. Square Field");
+        formulaListPRIMARYSCHOOL.add("3. Diagonal of a square");
     }
+
+
     private double result;
 
     public void triangleArea(double a, double h){
