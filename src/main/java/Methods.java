@@ -57,13 +57,31 @@ public class Methods {
             int numberOfFormnula = scan.nextInt();
 
             if (numberOfFormnula > formulaList.size() || numberOfFormnula < 1) {
-                System.out.println("Incorrect number, try again.");
+                System.out.println("Invalid number, try again.");
             } else {
-                System.out.println(formulaList.get(numberOfFormnula - 1));
-                break; //continue
+
+                switch(numberOfFormnula) {
+                    case 1:
+                        PrimarySchool.triangleArea();
+                        break;
+                    case 2:
+                        PrimarySchool.squareField();
+                        break;
+                    case 3:
+                        PrimarySchool.diagonalSquare();
+                        break;
+                    default:
+                        System.out.println("Invalid number");
+                        break;
+                }
+
+                break;
+
+
             }
 
 
         }
     }
+
 }
