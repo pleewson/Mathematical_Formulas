@@ -6,6 +6,8 @@ import java.util.Set;
 public class test {
     public static void main(String[] args) {
 
+
+
         Scanner scan = new Scanner(System.in);
 
 
@@ -24,13 +26,9 @@ public class test {
                 System.out.println("Incorrect number, try again.");
             }else {
                 System.out.println(test.get(numberOfFormnula-1));
-                break; //continue
+                break; //continoue
             }
-
-
         }
-
-
 
     }
 }
