@@ -5,15 +5,20 @@ public class Methods {
     public static void start() {
         System.out.println("Hello! Choose kind of Mathematical Formulas you looking for:" + '\n');
 
-        System.out.println("1. Areas");
-        System.out.println("2. Volumens");
-        System.out.println("3. Functions and equantions" + '\n');
+        ArrayList<String> mainFormulas = new ArrayList<>();
+        mainFormulas.add("1. Areas");
+        mainFormulas.add("2. Volumens");
+        mainFormulas.add("3. Functions and equantions");
 
-        System.out.println("Choose name or hit number to select kind of formula:");
+        for(String print : mainFormulas){
+            System.out.println(print);
+        }
+
+        System.out.println("\nChoose name or hit number to select kind of formula:");
 
     }
 
-    public static void chooseLevelSchool() {
+    public static void chooseFormulaType() {
         Scanner scan = new Scanner(System.in);
 
         while (true) {
@@ -24,8 +29,6 @@ public class Methods {
                 printFormulaList(Areas.areaList);
                 Areas.selectFormulaAREA(Areas.areaList);
 
-                //  select = scan.next();
-                // Methods.chooseFormula(select, PrimarySchool.areaList);
                 break;
 
             } else if (select.equals("2") || select.equalsIgnoreCase("Volumens")) {
@@ -37,14 +40,13 @@ public class Methods {
                 break;
 
             } else {
-                System.out.println("Incorrect enter, try again.");
+                System.out.println(COLOR.RED_TEXT + "Incorrect enter, try again." + COLOR.RESET);
             }
         }
     }
 
 
     public static void printFormulaList(ArrayList<String> formulaList) {
-        Scanner scan = new Scanner(System.in);
         short n = 1;
 
         Iterator<String> iterator = formulaList.iterator();
