@@ -33,6 +33,9 @@ public class Methods {
 
             } else if (select.equals("2") || select.equalsIgnoreCase("Volumens")) {
                 System.out.println("Volumens - Formulas list" + '\n');
+
+                printFormulaList(Volumens.volumensList);
+                Volumens.selectFormulaVOLUEME(Volumens.volumensList);
                 break;
 
             } else if (select.equals("3") || select.equalsIgnoreCase(("Functions and equantions"))) {
