@@ -57,6 +57,8 @@ public class Methods {
             String print = iterator.next();
             System.out.println(n + ". " + print);
             n++;
+
+            //unix
         }
     }
 }
