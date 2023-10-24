@@ -7,7 +7,7 @@ public class Main {
         Methods.start();
         Methods.chooseFormulaType();
 
-        //dw
+
 
 // https://www.matematica.pt/en/useful/math-formulas.php
 
