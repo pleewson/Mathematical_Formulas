@@ -9,6 +9,7 @@ public class Methods {
         mainFormulas.add("1. Areas");
         mainFormulas.add("2. Volumens");
         mainFormulas.add("3. Functions and equantions");
+        mainFormulas.add("4. Exponents");
 
         for(String print : mainFormulas){
             System.out.println(print);
@@ -41,6 +42,12 @@ public class Methods {
             } else if (select.equals("3") || select.equalsIgnoreCase(("Functions and equantions"))) {
                 System.out.println("Fonctions and equantions - Formulas list" + '\n');
                 break;
+
+            } else if(select.equals("4") || select.equalsIgnoreCase("Exponents")){
+                System.out.println("Exponents - Formula list" + "\n");
+                printFormulaList(Exponents.exponentsList);
+                Exponents.selectFormulaEXPONENTS(Exponents.exponentsList);
+
 
             } else {
                 System.out.println(COLOR.RED_TEXT + "Incorrect enter, try again." + COLOR.RESET);
