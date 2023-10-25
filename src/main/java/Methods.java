@@ -65,7 +65,6 @@ public class Methods {
             System.out.println(n + ". " + print);
             n++;
 
-            //unix
         }
     }
 }
