@@ -15,6 +15,7 @@ public class Exponents {
     }
 
 
+    //case -> 1
     public static void productFormula(){
         System.out.println(COLOR.YELLOW_TEXT + "a^m * a^n = a^(m+n)"  + COLOR.RESET);
         System.out.println("ex: 3^5 * 3^2 = 3^(5+2) = 3^7");
@@ -25,6 +26,22 @@ public class Exponents {
         System.out.println("\n" + COLOR.YELLOW_TEXT + "a^m / a^n = a^(m-n)" + COLOR.RESET);
         System.out.println("ex: 3^7 / 3^2 = 3^(7-2) = 3^5");
     }
+
+
+    //case -> 2
+    public static void quotientFormula(){
+        System.out.println(COLOR.YELLOW_TEXT + "a^m / a^n = a^(m-n)" + COLOR.RESET);
+        System.out.println("ex: 3^7 / 3^2 = 3^(7-2) = 3^5");
+        System.out.println("\n" + COLOR.YELLOW_TEXT + "a^m / b^m = (a/b)^m" + COLOR.RESET);
+        System.out.println("ex: 6^5 / 2^5 = (6/2)^5 = 3^5");
+        System.out.println("ex: 5^3 / 2^3 = (5/2)^3");
+    }
+
+
+    //case ->3
+    //public static void
+
+
 
 
     public static void selectFormulaEXPONENTS(ArrayList<String> formulaList) {
@@ -39,6 +56,7 @@ public class Exponents {
             } else {
                 switch(numberOfFormnula){
                     case 1 -> productFormula();
+                    case 2 -> quotientFormula();
                     default -> System.out.println(COLOR.RED_TEXT + "Invalid number" + COLOR.RESET);
                 }
                 break;

@@ -47,6 +47,7 @@ public class Methods {
                 System.out.println("Exponents - Formula list" + "\n");
                 printFormulaList(Exponents.exponentsList);
                 Exponents.selectFormulaEXPONENTS(Exponents.exponentsList);
+                break;
 
 
             } else {
