@@ -9,11 +9,7 @@ public class Main {
 
 
 // https://www.matematica.pt/en/useful/math-formulas.php
-
-
-        //primary school
-        //high school
-        //university
+        
 
         //if.. e.g. primary  ->  Methods.start();  -- > list of formulas that type.
 
